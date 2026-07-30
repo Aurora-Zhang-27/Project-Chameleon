@@ -1,0 +1,1363 @@
+{
+  "line": "C0-fit-32",
+  "scenario_count": 32,
+  "sentinel": {
+    "label": "S2",
+    "duration_hours": 2,
+    "initial_soc_fraction": 0.5,
+    "sigma": 0.08,
+    "reserve_fraction": 0.2
+  },
+  "candidate_count": 12,
+  "gate_passed": true,
+  "selected_parameters": {
+    "power_cap_mw": 15.0,
+    "up_reserve_cap_mw": 35.0,
+    "down_reserve_cap_mw": 35.0,
+    "ramp_cap_mw_per_hour": 50.0
+  },
+  "candidate_records": [
+    {
+      "parameters": {
+        "power_cap_mw": 0.0,
+        "up_reserve_cap_mw": 0.0,
+        "down_reserve_cap_mw": 0.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 1417351.651649475,
+      "relative_gap": null,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 0,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 0.11555291595868766,
+      "iteration_count": 1,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.11555291595868766,
+          "objective": 1417351.651649475,
+          "max_simultaneous_mw": 0.0,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [],
+      "integer_down_hours": [],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 0.0
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 0.0,
+        "up_reserve_cap_mw": 5.0,
+        "down_reserve_cap_mw": 10.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 1170750.98525377,
+      "relative_gap": 0.0,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 768,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 4.0737766670645215,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.14641745801782236,
+          "objective": 1170750.9852537687,
+          "max_simultaneous_mw": 10.0,
+          "added_base_hours": [],
+          "added_up_hours": [
+            9,
+            10,
+            11,
+            12,
+            15
+          ],
+          "added_down_hours": [
+            13,
+            16,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 320,
+          "solve_seconds": 1.672673584020231,
+          "objective": 1170750.98525377,
+          "max_simultaneous_mw": 10.0,
+          "added_base_hours": [],
+          "added_up_hours": [
+            6,
+            7,
+            8,
+            13,
+            14,
+            16
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            15
+          ]
+        },
+        {
+          "iteration": 2,
+          "binary_count": 768,
+          "solve_seconds": 2.254685625026468,
+          "objective": 1170750.98525377,
+          "max_simultaneous_mw": 1.886113241789556e-13,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 0.0
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 0.0,
+        "up_reserve_cap_mw": 15.0,
+        "down_reserve_cap_mw": 20.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 852670.447273148,
+      "relative_gap": 6.991490462581925e-08,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 736,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 3.1847540830494836,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.14239975000964478,
+          "objective": 852670.3961798258,
+          "max_simultaneous_mw": 20.0,
+          "added_base_hours": [],
+          "added_up_hours": [
+            7,
+            8,
+            14
+          ],
+          "added_down_hours": [
+            8,
+            16,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 224,
+          "solve_seconds": 1.2472287500277162,
+          "objective": 852670.3961798265,
+          "max_simultaneous_mw": 20.0,
+          "added_base_hours": [],
+          "added_up_hours": [
+            6,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            16
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "iteration": 2,
+          "binary_count": 736,
+          "solve_seconds": 1.7951255830121227,
+          "objective": 852670.447273148,
+          "max_simultaneous_mw": 7.105427357601002e-15,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 0.0,
+        "up_reserve_cap_mw": 20.0,
+        "down_reserve_cap_mw": 25.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 719075.4740543385,
+      "relative_gap": 0.0,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 736,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 2.0553578329854645,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.16266654100036249,
+          "objective": 719075.4740543381,
+          "max_simultaneous_mw": 18.75409836065579,
+          "added_base_hours": [],
+          "added_up_hours": [
+            7,
+            8,
+            14
+          ],
+          "added_down_hours": [
+            8,
+            16,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 224,
+          "solve_seconds": 0.22331162501359358,
+          "objective": 719572.8574120079,
+          "max_simultaneous_mw": 21.663891989582257,
+          "added_base_hours": [],
+          "added_up_hours": [
+            6,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            16
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "iteration": 2,
+          "binary_count": 736,
+          "solve_seconds": 1.6693796669715084,
+          "objective": 719075.4740543385,
+          "max_simultaneous_mw": 5.162537064506978e-15,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 0.0,
+        "up_reserve_cap_mw": 30.0,
+        "down_reserve_cap_mw": 30.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 473511.9134242404,
+      "relative_gap": 0.0006359239666140429,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 768,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 4.6946836250135675,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.17440725001506507,
+          "objective": 473288.30065218604,
+          "max_simultaneous_mw": 16.16602005508608,
+          "added_base_hours": [],
+          "added_up_hours": [
+            12,
+            15
+          ],
+          "added_down_hours": [
+            9,
+            11,
+            13,
+            16,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 256,
+          "solve_seconds": 0.8203551250044256,
+          "objective": 473510.15811117087,
+          "max_simultaneous_mw": 21.670446153916913,
+          "added_base_hours": [],
+          "added_up_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            14,
+            16
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            10,
+            12,
+            14,
+            15
+          ]
+        },
+        {
+          "iteration": 2,
+          "binary_count": 768,
+          "solve_seconds": 3.699921249994077,
+          "objective": 473511.9134242404,
+          "max_simultaneous_mw": 2.6645352591003757e-14,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 0.0,
+        "up_reserve_cap_mw": 35.0,
+        "down_reserve_cap_mw": 40.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 325055.01613223006,
+      "relative_gap": 0.000490132676817037,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 768,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 5.268758708029054,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.1678251670091413,
+          "objective": 324955.4321761383,
+          "max_simultaneous_mw": 13.08301002754304,
+          "added_base_hours": [],
+          "added_up_hours": [
+            12
+          ],
+          "added_down_hours": [
+            9,
+            11,
+            13,
+            16,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 224,
+          "solve_seconds": 0.7647604580270126,
+          "objective": 324955.43217613874,
+          "max_simultaneous_mw": 20.330289611275663,
+          "added_base_hours": [],
+          "added_up_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            10,
+            12,
+            14,
+            15
+          ]
+        },
+        {
+          "iteration": 2,
+          "binary_count": 768,
+          "solve_seconds": 4.3361730829929,
+          "objective": 325055.01613223006,
+          "max_simultaneous_mw": 5.861977570020827e-14,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 7.105427357601002e-13
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 0.0,
+        "up_reserve_cap_mw": 45.0,
+        "down_reserve_cap_mw": 50.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 238621.94090529103,
+      "relative_gap": 0.0008192089734986193,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 704,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 7.021869916003197,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.1587848750059493,
+          "objective": 238526.30278455117,
+          "max_simultaneous_mw": 10.352849494668732,
+          "added_base_hours": [],
+          "added_up_hours": [
+            12
+          ],
+          "added_down_hours": [
+            9,
+            11,
+            13,
+            16
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 160,
+          "solve_seconds": 0.7087691249907948,
+          "objective": 238526.3027845512,
+          "max_simultaneous_mw": 20.70831449119252,
+          "added_base_hours": [],
+          "added_up_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            10,
+            12,
+            14,
+            15
+          ]
+        },
+        {
+          "iteration": 2,
+          "binary_count": 704,
+          "solve_seconds": 6.154315916006453,
+          "objective": 238621.94090529103,
+          "max_simultaneous_mw": 6.394884621840902e-14,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 5.0,
+        "up_reserve_cap_mw": 20.0,
+        "down_reserve_cap_mw": 30.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 545139.2431304675,
+      "relative_gap": 0.0,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 1120,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 2.945812207995914,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.16637145797722042,
+          "objective": 545139.2431304669,
+          "max_simultaneous_mw": 20.495974652100152,
+          "added_base_hours": [],
+          "added_up_hours": [
+            11,
+            15,
+            20,
+            21,
+            23
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 576,
+          "solve_seconds": 0.986400792025961,
+          "objective": 545139.2431304675,
+          "max_simultaneous_mw": 14.160113624749984,
+          "added_base_hours": [],
+          "added_up_hours": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            16,
+            17,
+            22
+          ],
+          "added_down_hours": []
+        },
+        {
+          "iteration": 2,
+          "binary_count": 1120,
+          "solve_seconds": 1.7930399579927325,
+          "objective": 545139.2431304675,
+          "max_simultaneous_mw": 9.947598300641403e-14,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21,
+        22,
+        23
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 3.552713678800501e-15
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 5.0,
+        "up_reserve_cap_mw": 30.0,
+        "down_reserve_cap_mw": 35.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 302511.1838201104,
+      "relative_gap": 0.0,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 1056,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 4.392078375967685,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.20712004200322554,
+          "objective": 302511.1838201098,
+          "max_simultaneous_mw": 22.70782075344779,
+          "added_base_hours": [],
+          "added_up_hours": [
+            5,
+            7,
+            11,
+            15,
+            23
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 576,
+          "solve_seconds": 1.6009971249732189,
+          "objective": 302511.1838201104,
+          "max_simultaneous_mw": 13.860833426809876,
+          "added_base_hours": [],
+          "added_up_hours": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            16,
+            17,
+            22
+          ],
+          "added_down_hours": []
+        },
+        {
+          "iteration": 2,
+          "binary_count": 1056,
+          "solve_seconds": 2.5839612089912407,
+          "objective": 302511.1838201104,
+          "max_simultaneous_mw": 5.549800385333463e-14,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        23
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 3.552713678800501e-15
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 5.0,
+        "up_reserve_cap_mw": 35.0,
+        "down_reserve_cap_mw": 40.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 224090.60777847454,
+      "relative_gap": 0.0007878309197790148,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 1056,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 12.360670999973081,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.1990612919908017,
+          "objective": 224010.08110565552,
+          "max_simultaneous_mw": 20.20782075344779,
+          "added_base_hours": [],
+          "added_up_hours": [
+            5,
+            7,
+            11,
+            23
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 544,
+          "solve_seconds": 0.793704624986276,
+          "objective": 224106.59509079432,
+          "max_simultaneous_mw": 14.160113624749982,
+          "added_base_hours": [],
+          "added_up_hours": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            22
+          ],
+          "added_down_hours": []
+        },
+        {
+          "iteration": 2,
+          "binary_count": 1056,
+          "solve_seconds": 11.367905082996003,
+          "objective": 224090.60777847454,
+          "max_simultaneous_mw": 2.842170943040401e-14,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        23
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 1.0658141036401503e-14
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 5.0,
+        "up_reserve_cap_mw": 45.0,
+        "down_reserve_cap_mw": 45.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 212975.84196544456,
+      "relative_gap": 0.0,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 960,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 50.129882249981165,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.19284591701580212,
+          "objective": 212975.84196544456,
+          "max_simultaneous_mw": 17.70782075344779,
+          "added_base_hours": [],
+          "added_up_hours": [
+            5,
+            7,
+            11
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 448,
+          "solve_seconds": 0.7855062919552438,
+          "objective": 212975.84196544456,
+          "max_simultaneous_mw": 14.160113624749982,
+          "added_base_hours": [],
+          "added_up_hours": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "added_down_hours": []
+        },
+        {
+          "iteration": 2,
+          "binary_count": 960,
+          "solve_seconds": 49.15153004101012,
+          "objective": 212975.84196544456,
+          "max_simultaneous_mw": 9.992007221626409e-14,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 3.552713678800501e-15
+    },
+    {
+      "parameters": {
+        "power_cap_mw": 15.0,
+        "up_reserve_cap_mw": 35.0,
+        "down_reserve_cap_mw": 35.0,
+        "ramp_cap_mw_per_hour": 50.0
+      },
+      "passed": true,
+      "certified_contract_exact": true,
+      "objective_usd": 209663.54302444297,
+      "relative_gap": 0.0,
+      "solver_unresolved": false,
+      "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "final_binary_count": 800,
+      "final_variable_count": 24440,
+      "final_constraint_count": 27267,
+      "total_solve_seconds": 4.049885708023794,
+      "iteration_count": 3,
+      "iterations": [
+        {
+          "iteration": 0,
+          "binary_count": 0,
+          "solve_seconds": 0.3521667080349289,
+          "objective": 209663.54302444297,
+          "max_simultaneous_mw": 20.415641506895582,
+          "added_base_hours": [],
+          "added_up_hours": [
+            10,
+            12,
+            15,
+            23
+          ],
+          "added_down_hours": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19
+          ]
+        },
+        {
+          "iteration": 1,
+          "binary_count": 512,
+          "solve_seconds": 1.21917537500849,
+          "objective": 209663.54302444297,
+          "max_simultaneous_mw": 16.38291392971135,
+          "added_base_hours": [],
+          "added_up_hours": [
+            6,
+            7,
+            8,
+            9,
+            11,
+            13,
+            14,
+            16
+          ],
+          "added_down_hours": [
+            16
+          ]
+        },
+        {
+          "iteration": 2,
+          "binary_count": 800,
+          "solve_seconds": 2.478543624980375,
+          "objective": 209663.54302444297,
+          "max_simultaneous_mw": 3.1086244689504383e-15,
+          "added_base_hours": [],
+          "added_up_hours": [],
+          "added_down_hours": []
+        }
+      ],
+      "integer_base_hours": [],
+      "integer_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        23
+      ],
+      "integer_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "replay_valid": true,
+      "cost_reconciled": true,
+      "non_delivery_count": 0,
+      "non_delivery_rate": 0.0,
+      "max_shortfall_mw": 7.105427357601002e-15
+    }
+  ]
+}

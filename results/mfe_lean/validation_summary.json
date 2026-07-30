@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "row_count": 1536,
+  "expected_row_count": 1536,
+  "cell_count": 6,
+  "paired_path_count": 384,
+  "duplicate_key_count": 0,
+  "incomplete_pair_count": 0,
+  "unexpected_cell_line_counts": {},
+  "physical_replay_failures": 0,
+  "cost_reconciliation_failures": 0,
+  "solver_unresolved_count": 0,
+  "nonfinite_cost_count": 0,
+  "ws_lower_bound_violation_count": 0,
+  "max_ws_lower_bound_violation_usd": 0.0
+}

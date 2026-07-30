@@ -1,0 +1,113 @@
+{
+  "line": "C_full-32",
+  "scenario_count": 32,
+  "sentinel": {
+    "label": "S2",
+    "duration_hours": 2,
+    "initial_soc_fraction": 0.5,
+    "sigma": 0.08,
+    "reserve_fraction": 0.2
+  },
+  "passed": true,
+  "certified_contract_exact": true,
+  "objective_usd": 206067.09827638988,
+  "relative_gap": 3.456937626282132e-16,
+  "solver_unresolved": false,
+  "termination": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "final_binary_count": 736,
+  "final_variable_count": 24440,
+  "final_constraint_count": 27172,
+  "total_solve_seconds": 7.957589624042157,
+  "iteration_count": 3,
+  "iterations": [
+    {
+      "iteration": 0,
+      "binary_count": 0,
+      "solve_seconds": 0.6747888330137357,
+      "objective": 206067.09827638988,
+      "max_simultaneous_mw": 17.08980865902076,
+      "added_base_hours": [],
+      "added_up_hours": [
+        13
+      ],
+      "added_down_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        23
+      ]
+    },
+    {
+      "iteration": 1,
+      "binary_count": 416,
+      "solve_seconds": 2.3299494580132887,
+      "objective": 206067.09827638988,
+      "max_simultaneous_mw": 22.84093218839275,
+      "added_base_hours": [],
+      "added_up_hours": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16
+      ],
+      "added_down_hours": []
+    },
+    {
+      "iteration": 2,
+      "binary_count": 736,
+      "solve_seconds": 4.952851333015133,
+      "objective": 206067.09827638988,
+      "max_simultaneous_mw": 9.237055564881302e-14,
+      "added_base_hours": [],
+      "added_up_hours": [],
+      "added_down_hours": []
+    }
+  ],
+  "integer_base_hours": [],
+  "integer_up_hours": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "integer_down_hours": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    23
+  ],
+  "replay_valid": true,
+  "cost_reconciled": true,
+  "non_delivery_count": 0,
+  "non_delivery_rate": 0.0,
+  "max_shortfall_mw": 7.105427357601002e-15
+}
