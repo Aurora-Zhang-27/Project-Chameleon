@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "cell_count": 6,
+  "held_out_record_count": 768,
+  "expected_record_count": 768,
+  "duplicate_key_count": 0,
+  "incomplete_pair_count": 0,
+  "unexpected_cell_line_count": 0,
+  "construction_physical_failures": 0,
+  "construction_cost_reconciliation_failures": 0,
+  "held_out_physical_failures": 0,
+  "held_out_cost_reconciliation_failures": 0,
+  "held_out_solver_unresolved": 0,
+  "full_binary_solve_seconds": 113.935978168,
+  "max_full_binary_solve_seconds": 60.103208709
+}

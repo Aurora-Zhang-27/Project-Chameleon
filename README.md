@@ -15,15 +15,15 @@ flexibility.
 - Deterministic and minimal stochastic theory: complete and frozen.
 - Propositions 1--18: consolidated into four structural results.
 - Independent physical replay and regression suite: complete.
-- Lean numerical paper validation: complete.
-- Local numerical development: closed.
+- Lightweight full-binary numerical validation: complete.
+- Current local numerical stage: complete.
 - Full powered market study: deferred to server/laboratory execution.
 - Next work: manuscript drafting only.
 
 ## Read these first
 
 1. [Final paper plan](docs/paper/THEORY_DISTILLATION_AND_PAPER_PLAN.md)
-2. [Lean numerical report](docs/research/MFE_LEAN_PAPER_VALIDATION_REPORT.md)
+2. [Full-binary lightweight numerical report](docs/research/MFE_LEAN_PAPER_VALIDATION_REPORT.md)
 3. [Recommended disclosure specification](docs/paper/RECOMMENDED_DISCLOSURE_SPECIFICATION.md)
 4. [Current progress](PROJECT_PROGRESS.md)
 
@@ -40,8 +40,8 @@ flexibility.
    insufficient; scenario correspondence, information timing,
    nonanticipativity, and risk state can become contract fields.
 5. In the final six-cell synthetic PV+BESS validation, `C1` reduced mean
-   realized cost by 12.9%--16.1% relative to the `C_ASSOC` market proxy, with
-   zero isolated non-delivery for both lines.
+   realized cost by 10.66%--13.94% relative to the `C_ASSOC` market proxy and
+   remained only 1.06%--2.55% above the full-binary `C_full-32` benchmark.
 
 ## Repository map
 
@@ -52,7 +52,7 @@ flexibility.
 | `docs/paper/` | final paper architecture and disclosure specification |
 | `docs/research/` | current authoritative numerical design and reports |
 | `src/chameleon/` | tested theory examples, truth model, replay, and analysis |
-| `tests/` | 77 regression and physical-consistency tests |
+| `tests/` | 79 regression and physical-consistency tests |
 | `data/external/rts_gmlc/` | pinned public reproducible synthetic benchmark data |
 | `results/` | only final active evidence and checksums |
 | `papers/` | source literature and primary CAISO documents |
@@ -67,13 +67,17 @@ VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 \
 PYTHONPATH=src python -m pytest -q tests
 ```
 
-Rebuild the lean tables and figure from the frozen paired records:
+Run the six-cell 24-hour full-binary experiment and rebuild its validated
+tables and figure:
 
 ```bash
 MPLCONFIGDIR=/tmp/chameleon-mpl \
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 \
-PYTHONPATH=src python -m chameleon.mfe_lean_analysis
+PYTHONPATH=src python -m chameleon.mfe_v3_lightweight all
+
+MPLCONFIGDIR=/tmp/chameleon-mpl \
+PYTHONPATH=src python -m chameleon.mfe_v3_lightweight_analysis
 ```
 
 The RTS-GMLC inputs are authentic public benchmark files, but they are
