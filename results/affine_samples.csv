@@ -1,0 +1,9 @@
+family,N,instances,samples,tree_feasible_float,pf_accept_float,affine_certified,affine_float_only,segregated_certified,segregated_float_only,segregated_rejected,requires_other_method_strict
+positive,3,1121,27513,27513,19525,27463,50,27463,50,0,50
+positive,4,1062,25743,25743,16740,25743,0,25743,0,0,0
+positive,5,1086,26058,26058,16686,26058,0,26058,0,0,0
+positive,6,1100,26218,26218,15943,26218,0,26218,0,0,0
+with-zeros,3,1046,25681,25681,19460,25630,51,25630,51,0,51
+with-zeros,4,1060,25719,25719,17864,25719,0,25719,0,0,0
+with-zeros,5,1137,27591,27591,18289,27591,0,27591,0,0,0
+with-zeros,6,1110,26540,26537,16824,26537,0,26537,0,3,3

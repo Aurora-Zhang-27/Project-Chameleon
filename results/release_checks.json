@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-14",
+  "python": "3.9.6",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "checks": [
+    {
+      "check": "runtime regressions",
+      "command": "python -m unittest discover -s tests -v",
+      "cwd": ".",
+      "exit_code": 0,
+      "seconds": 1.495
+    },
+    {
+      "check": "CLI demo",
+      "command": "python run.py --demo",
+      "cwd": ".",
+      "exit_code": 0,
+      "seconds": 0.327
+    },
+    {
+      "check": "CLI policy execution",
+      "command": "python run.py --input examples/affine.json --requests 0 1/10",
+      "cwd": ".",
+      "exit_code": 0,
+      "seconds": 0.361
+    },
+    {
+      "check": "N2 recursion",
+      "command": "python n2_exact.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.515
+    },
+    {
+      "check": "N3 recursion",
+      "command": "python n3_exact.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 1.401
+    },
+    {
+      "check": "N3 lemma certificates",
+      "command": "python n3_lemma_certificate.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.531
+    },
+    {
+      "check": "homogeneous recursion",
+      "command": "python homogeneous_exact.py 3 100",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.785
+    },
+    {
+      "check": "independent homogeneous attack",
+      "command": "python review_codex_h_independent.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 9.02
+    },
+    {
+      "check": "Example B facet certificate",
+      "command": "python review_codex_n4_geometry.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.605
+    },
+    {
+      "check": "Example C certificate",
+      "command": "python n4_real_certificate.py --three-types",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.451
+    },
+    {
+      "check": "Example C positive certificate",
+      "command": "python n4_real_certificate.py 1/100 --three-types",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.46
+    },
+    {
+      "check": "two-type certificates",
+      "command": "python two_types_certificate.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.966
+    },
+    {
+      "check": "two-type positive certificates",
+      "command": "python two_types_certificate.py 1/100",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.992
+    },
+    {
+      "check": "coefficient-2 facets",
+      "command": "python n4_normal_certificate.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 1.721
+    },
+    {
+      "check": "coefficient-2 positive facets",
+      "command": "python n4_normal_certificate.py 1/100",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 1.496
+    },
+    {
+      "check": "affine gap certificate",
+      "command": "python affine_gap_certificate.py",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 0.81
+    },
+    {
+      "check": "affine positive gap certificate",
+      "command": "python affine_gap_certificate.py 1/100",
+      "cwd": "complexity_20260925/evidence",
+      "exit_code": 0,
+      "seconds": 1.128
+    }
+  ],
+  "broken_markdown_links": [],
+  "historical_211063_samples_rerun": false,
+  "note": "Rational certificate scripts validate exact identities. Other LP comparisons remain floating-point evidence.",
+  "passed": true
+}

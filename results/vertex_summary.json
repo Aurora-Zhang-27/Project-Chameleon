@@ -1,0 +1,78 @@
+[
+  {
+    "family": "cases",
+    "seed": 0,
+    "kind": "segregated",
+    "tally": {
+      "all vertices affine": 8,
+      "some vertex not affine": 1
+    },
+    "vertices": 692
+  },
+  {
+    "family": "near",
+    "seed": 21,
+    "kind": "segregated",
+    "tally": {
+      "infeasible": 306,
+      "all vertices affine": 187,
+      "lowdim": 7
+    },
+    "vertices": 9646
+  },
+  {
+    "family": "near",
+    "seed": 22,
+    "kind": "segregated",
+    "tally": {
+      "infeasible": 312,
+      "all vertices affine": 180,
+      "lowdim": 8
+    },
+    "vertices": 9016
+  },
+  {
+    "family": "random",
+    "seed": 11,
+    "kind": "segregated",
+    "tally": {
+      "all vertices affine": 103,
+      "lowdim": 2,
+      "infeasible": 45
+    },
+    "vertices": 8176
+  },
+  {
+    "family": "random",
+    "seed": 12,
+    "kind": "segregated",
+    "tally": {
+      "all vertices affine": 103,
+      "infeasible": 45,
+      "lowdim": 2
+    },
+    "vertices": 7826
+  },
+  {
+    "family": "random",
+    "seed": 13,
+    "kind": "segregated",
+    "tally": {
+      "all vertices affine": 106,
+      "infeasible": 42,
+      "lowdim": 2
+    },
+    "vertices": 9430
+  },
+  {
+    "family": "random",
+    "seed": 14,
+    "kind": "segregated",
+    "tally": {
+      "all vertices affine": 100,
+      "infeasible": 49,
+      "lowdim": 1
+    },
+    "vertices": 6655
+  }
+]

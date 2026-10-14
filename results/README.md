@@ -1,19 +1,9 @@
-# Active results
+# 保留的结果
 
-Only final paper-facing evidence remains in this directory.
+- `affine_samples.csv`：8 个历史样本批次按 N 和功率菜单汇总，严格待定数为 samples − segregated_certified。
+- `affine_scaling.csv`：历史耗时中位数。LP 求解、重新求解并认证、模型构建分别计时；长时段 mild 批次没有树 LP 对照。
+- `vertex_summary.json`：分段仿射顶点筛查的汇总，浮点证据，不是逐顶点有理数证书。
+- `provenance.json`：本机源提交及原始 JSON 文件 SHA256。原始数据不随精简包发布；复现样本生成脚本仍保留。
+- `certificates.txt`、`release_checks.json`：本次发布工作区运行的精确证书、回归及入口检查记录。
 
-## `mfe_final/staircase/`
-
-Three completed `C_full-32` sentinel certificates and the corresponding C0
-candidate fits. All passed independent replay.
-
-## `mfe_lean/`
-
-- `held_out_records.csv`: 1,536 frozen path-level records.
-- `regime_table.csv`: exact line-by-cell aggregates.
-- `paired_statistics.csv`: paired differences and uncertainty intervals.
-- `validation_summary.json`: structural and replay validation.
-- `figures/lean_frontier.png`: paper-facing summary figure.
-- `CHART_CONTRACT.md`: the figure's metric and presentation contract.
-
-`SHA256SUMS.txt` covers every active result file except itself.
+历史计时依赖机器和软件版本；实验高接受率不是一般精确性证明。精确反例以证书脚本为准。

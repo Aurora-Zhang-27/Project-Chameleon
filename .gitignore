@@ -1,9 +1,7 @@
-.DS_Store
 __pycache__/
 *.py[cod]
-.mypy_cache/
-.pytest_cache/
 .venv/
-
-# Source literature is referenced by citation and is not redistributed.
+.pytest_cache/
+.DS_Store
 papers/
+*Academic_CV*

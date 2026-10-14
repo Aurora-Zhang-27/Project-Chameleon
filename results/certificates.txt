@@ -1,0 +1,176 @@
+runtime regressions
+$ python -m unittest discover -s tests -v
+test_affine_gap_is_unknown_without_tree (test_release.ReleaseTests) ... ok
+test_certified_template (test_release.ReleaseTests) ... ok
+test_exact_regime_policies (test_release.ReleaseTests) ... ok
+test_fraction_policy_returned_and_executes (test_release.ReleaseTests) ... ok
+test_inert_zero_request (test_release.ReleaseTests) ... ok
+test_initial_box_and_empty_horizon (test_release.ReleaseTests) ... ok
+test_invalid_request_interval (test_release.ReleaseTests) ... ok
+test_necessary_rejection (test_release.ReleaseTests) ... ok
+test_outside_commitment_not_executed (test_release.ReleaseTests) ... ok
+test_template_rejects_known_outer_gap (test_release.ReleaseTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.135s
+
+OK
+
+
+CLI demo
+$ python run.py --demo
+{"example": "affine.json", "status": "feasible", "method": "segregated-affine", "certification": "rational", "policy": {"kind": "segregated", "initial": ["1", "3/2", "2", "5/2"], "intervals": [["-1/10", "1/10"], ["0", "1/5"]], "intercepts": [["1", "0"], ["-1/2", "2"], ["19/10", "-3"], ["-12/5", "1"]], "gains": [{"device": 0, "time": 0, "request_time": 0, "sign": "+", "value": "0"}, {"device": 0, "time": 0, "request_time": 0, "sign": "-", "value": "0"}, {"device": 0, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 0, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 0, "time": 1, "request_time": 1, "sign": "+", "value": "0"}, {"device": 0, "time": 1, "request_time": 1, "sign": "-", "value": "-1"}, {"device": 1, "time": 0, "request_time": 0, "sign": "+", "value": "0"}, {"device": 1, "time": 0, "request_time": 0, "sign": "-", "value": "0"}, {"device": 1, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 1, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 1, "time": 1, "request_time": 1, "sign": "+", "value": "0"}, {"device": 1, "time": 1, "request_time": 1, "sign": "-", "value": "0"}, {"device": 2, "time": 0, "request_time": 0, "sign": "+", "value": "1"}, {"device": 2, "time": 0, "request_time": 0, "sign": "-", "value": "0"}, {"device": 2, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 2, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 2, "time": 1, "request_time": 1, "sign": "+", "value": "1"}, {"device": 2, "time": 1, "request_time": 1, "sign": "-", "value": "0"}, {"device": 3, "time": 0, "request_time": 0, "sign": "+", "value": "0"}, {"device": 3, "time": 0, "request_time": 0, "sign": "-", "value": "-1"}, {"device": 3, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 3, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 3, "time": 1, "request_time": 1, "sign": "+", "value": "0"}, {"device": 3, "time": 1, "request_time": 1, "sign": "-", "value": "0"}]}}
+{"example": "affine_gap.json", "status": "unknown", "method": "segregated-affine", "inner_status": "rejected"}
+{"example": "full_reach.json", "status": "feasible", "method": "total-energy", "certification": "rational"}
+{"example": "homogeneous.json", "status": "feasible", "method": "homogeneous", "certification": "rational"}
+{"example": "n2.json", "status": "feasible", "method": "N2", "certification": "rational"}
+{"example": "n3.json", "status": "feasible", "method": "N3", "certification": "rational"}
+{"example": "single.json", "status": "feasible", "method": "single", "certification": "rational"}
+
+
+CLI policy execution
+$ python run.py --input examples/affine.json --requests 0 1/10
+{"example": "affine.json", "status": "feasible", "method": "segregated-affine", "certification": "rational", "policy": {"kind": "segregated", "initial": ["1", "3/2", "2", "5/2"], "intervals": [["-1/10", "1/10"], ["0", "1/5"]], "intercepts": [["1", "0"], ["-1/2", "2"], ["19/10", "-3"], ["-12/5", "1"]], "gains": [{"device": 0, "time": 0, "request_time": 0, "sign": "+", "value": "0"}, {"device": 0, "time": 0, "request_time": 0, "sign": "-", "value": "0"}, {"device": 0, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 0, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 0, "time": 1, "request_time": 1, "sign": "+", "value": "0"}, {"device": 0, "time": 1, "request_time": 1, "sign": "-", "value": "-1"}, {"device": 1, "time": 0, "request_time": 0, "sign": "+", "value": "0"}, {"device": 1, "time": 0, "request_time": 0, "sign": "-", "value": "0"}, {"device": 1, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 1, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 1, "time": 1, "request_time": 1, "sign": "+", "value": "0"}, {"device": 1, "time": 1, "request_time": 1, "sign": "-", "value": "0"}, {"device": 2, "time": 0, "request_time": 0, "sign": "+", "value": "1"}, {"device": 2, "time": 0, "request_time": 0, "sign": "-", "value": "0"}, {"device": 2, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 2, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 2, "time": 1, "request_time": 1, "sign": "+", "value": "1"}, {"device": 2, "time": 1, "request_time": 1, "sign": "-", "value": "0"}, {"device": 3, "time": 0, "request_time": 0, "sign": "+", "value": "0"}, {"device": 3, "time": 0, "request_time": 0, "sign": "-", "value": "-1"}, {"device": 3, "time": 1, "request_time": 0, "sign": "+", "value": "0"}, {"device": 3, "time": 1, "request_time": 0, "sign": "-", "value": "0"}, {"device": 3, "time": 1, "request_time": 1, "sign": "+", "value": "0"}, {"device": 3, "time": 1, "request_time": 1, "sign": "-", "value": "0"}]}, "powers": [["1", "-1/2", "19/10", "-12/5"], ["0", "2", "-29/10", "1"]]}
+
+
+N2 recursion
+$ python n2_exact.py
+{'cases': 305, 'feasible': 30, 'empty': 275, 'support_checks': 180, 'rational_replay_edges': 207, 'disagreements': 0}
+
+
+N3 recursion
+$ python n3_exact.py
+{'cases': 46, 'feasible': 43, 'empty': 3, 'support_checks': 602, 'exact_actions': 94}
+
+
+N3 lemma certificates
+$ python n3_lemma_certificate.py
+N=3: 25 cone inequalities; dual vertices per S: {1: 9, 2: 9, 3: 11, 4: 9, 5: 11, 6: 11, 7: 9} ; fractional: {1: 1, 2: 1, 3: 0, 4: 1, 5: 0, 6: 0, 7: 1}
+(1) fractional dual vertices not dominated by integral ones: 0
+(2) closed form S=1: terms dual feasible True; dual vertices not dominated 0
+(2) closed form S=3: terms dual feasible True; dual vertices not dominated 0
+(2) closed form S=7: terms dual feasible True; dual vertices not dominated 0
+(3) T2 beta(12)+beta(13) >= b123+beta(1): vertex pairs certified 121, not certified 0
+
+
+homogeneous recursion
+$ python homogeneous_exact.py 3 100
+{'cases': 100, 'nonempty': 54, 'empty': 46, 'support_checks': 406, 'support_dev': '0.00e+00', 'points': 432, 'point_disagree': 0, 'vertices': 606, 'vertex_rejected': 0, 'vertex_skipped_no_interior': 0, 'vertex_skipped_qhull': 0, 'presolve_off_rescues': 0}
+validation passed: support deviation <= 1e-7, no point disagreement, no rejected vertex
+
+
+independent homogeneous attack
+$ python review_codex_h_independent.py
+AB/D progress {'cases': 16, 'nonempty': 8, 'empty': 8, 'exact_subset_supports': 22, 'mixed_orbits': 3, 'mixed_directions_covered': 6, 'vertex_orbits': 19, 'vertices': 26, 'lowdim_cases': 0, 'point_checks': 64, 'policy_points': 64, 'policy_transitions': 224, 'fallbacks': 0}
+AB/D progress {'cases': 32, 'nonempty': 14, 'empty': 18, 'exact_subset_supports': 58, 'mixed_orbits': 22, 'mixed_directions_covered': 106, 'vertex_orbits': 43, 'vertices': 92, 'lowdim_cases': 0, 'point_checks': 128, 'policy_points': 128, 'policy_transitions': 1962, 'fallbacks': 0}
+AB/D progress {'cases': 48, 'nonempty': 21, 'empty': 27, 'exact_subset_supports': 122, 'mixed_orbits': 80, 'mixed_directions_covered': 976, 'vertex_orbits': 58, 'vertices': 158, 'lowdim_cases': 0, 'point_checks': 192, 'policy_points': 192, 'policy_transitions': 3362, 'fallbacks': 0}
+AB/D progress {'cases': 64, 'nonempty': 33, 'empty': 31, 'exact_subset_supports': 268, 'mixed_orbits': 268, 'mixed_directions_covered': 11346, 'vertex_orbits': 58, 'vertices': 158, 'lowdim_cases': 0, 'point_checks': 256, 'policy_points': 256, 'policy_transitions': 5002, 'fallbacks': 0}
+AB/D progress {'cases': 80, 'nonempty': 44, 'empty': 36, 'exact_subset_supports': 436, 'mixed_orbits': 548, 'mixed_directions_covered': 61424, 'vertex_orbits': 58, 'vertices': 158, 'lowdim_cases': 0, 'point_checks': 320, 'policy_points': 320, 'policy_transitions': 5858, 'fallbacks': 0}
+AB/D progress {'cases': 96, 'nonempty': 60, 'empty': 36, 'exact_subset_supports': 580, 'mixed_orbits': 716, 'mixed_directions_covered': 79080, 'vertex_orbits': 66, 'vertices': 177, 'lowdim_cases': 8, 'point_checks': 384, 'policy_points': 384, 'policy_transitions': 6246, 'fallbacks': 0}
+AB/D progress {'cases': 112, 'nonempty': 76, 'empty': 36, 'exact_subset_supports': 620, 'mixed_orbits': 720, 'mixed_directions_covered': 79088, 'vertex_orbits': 102, 'vertices': 225, 'lowdim_cases': 8, 'point_checks': 448, 'policy_points': 448, 'policy_transitions': 11359, 'fallbacks': 0}
+AB/D progress {'cases': 128, 'nonempty': 92, 'empty': 36, 'exact_subset_supports': 700, 'mixed_orbits': 752, 'mixed_directions_covered': 79200, 'vertex_orbits': 158, 'vertices': 369, 'lowdim_cases': 8, 'point_checks': 512, 'policy_points': 512, 'policy_transitions': 21668, 'fallbacks': 0}
+AB/D progress {'cases': 144, 'nonempty': 108, 'empty': 36, 'exact_subset_supports': 820, 'mixed_orbits': 836, 'mixed_directions_covered': 79848, 'vertex_orbits': 234, 'vertices': 681, 'lowdim_cases': 8, 'point_checks': 576, 'policy_points': 576, 'policy_transitions': 32489, 'fallbacks': 0}
+AB/D RESULT {"cases": 144, "nonempty": 108, "empty": 36, "exact_subset_supports": 820, "mixed_orbits": 836, "mixed_directions_covered": 79848, "vertex_orbits": 234, "vertices": 681, "lowdim_cases": 8, "point_checks": 576, "policy_points": 576, "policy_transitions": 32489, "fallbacks": 0}
+C RESULT {"cases": 96, "nonempty": 50, "empty": 46, "exact_supports": 428, "exact_vertex_comparisons": 128, "raw_not_tight": 15, "negative_entries": 46}
+EXAMPLE C EXACT {'eps': '0', 'subset_optima': 30, 'lhs': '9/10', 'rhs': '2/5', 'estar_in_true_subset_hull': True}
+EXAMPLE C EXACT {'eps': '1/100', 'subset_optima': 30, 'lhs': '47/50', 'rhs': '9/20', 'estar_in_true_subset_hull': True}
+
+
+Example B facet certificate
+$ python review_codex_n4_geometry.py
+N4 EXACT {'eps': '0', 'subset_optima_certified': 30, 'estar_in_tight_subset_hull': True, 'mixed_support': '4/5', 'kernel_dimension': 4, 'face_dimension': 3, 'face_witnesses': [('9/5', '0', '2/5', '4/5'), ('9/5', '1/5', '1/5', '1'), ('2', '0', '1/5', '4/5'), ('4', '0', '1/5', '4/5')]}
+N4 EXACT {'eps': '1/100', 'subset_optima_certified': 30, 'estar_in_tight_subset_hull': True, 'mixed_support': '17/20', 'kernel_dimension': 4, 'face_dimension': 3, 'face_witnesses': [('179/100', '0', '39/100', '17/20'), ('179/100', '3/20', '6/25', '1'), ('2', '0', '9/50', '17/20'), ('4', '0', '9/50', '17/20')]}
+
+
+Example C certificate
+$ python n4_real_certificate.py --three-types
+instance = Example C (three types), eps = 0
+(a) 30 rational feasible-policy witnesses verified exactly (they bound the true subset supports;
+    agreement with the float LP optimum within 1e-7 is a float check only; exact optimality of these
+    values is certified separately in review_codex_h_independent.py (Example C: exact optima of the 30 subset supports; not a facet certificate))
+(b) e* = ('19/10', '1/10', '1/5', '1')  in Q (hence in the subset outer approximation): True
+(c) violated valid inequalities e(A)-e(B) <= b1(A∪M)-a1(B∪M)+D(A)+C(B)  [y0, A, B, M, lhs, rhs]:
+    ('1/5', [0, 0, 0, 1], [0, 1, 0, 0], [0, 0, 1, 0], '9/10', '2/5')
+    ('3/5', [0, 0, 0, 1], [0, 1, 0, 0], [0, 0, 1, 0], '9/10', '2/5')
+=> e* lies in the subset outer approximation of K_0 but not in K_0: True
+
+
+Example C positive certificate
+$ python n4_real_certificate.py 1/100 --three-types
+instance = Example C (three types), eps = 1/100
+(a) 30 rational feasible-policy witnesses verified exactly (they bound the true subset supports;
+    agreement with the float LP optimum within 1e-7 is a float check only; exact optimality of these
+    values is certified separately in review_codex_h_independent.py (Example C: exact optima of the 30 subset supports; not a facet certificate))
+(b) e* = ('47/25', '3/50', '6/25', '1')  in Q (hence in the subset outer approximation): True
+(c) violated valid inequalities e(A)-e(B) <= b1(A∪M)-a1(B∪M)+D(A)+C(B)  [y0, A, B, M, lhs, rhs]:
+    ('1/5', [0, 0, 0, 1], [0, 1, 0, 0], [0, 0, 1, 0], '47/50', '9/20')
+    ('3/5', [0, 0, 0, 1], [0, 1, 0, 0], [0, 0, 1, 0], '47/50', '9/20')
+=> e* lies in the subset outer approximation of K_0 but not in K_0: True
+
+
+two-type certificates
+$ python two_types_certificate.py
+zero powers replaced by 0
+XXYY-a: w=[-1, 0, 0, 1]  max over subset outer = -4/5  max over K0 = -9/10  -> gap
+    e* = ('19/10', '47/10', '7/10', '11/10'), in subset outer (exact): True, w.e* = -4/5
+XXYY-b: w=[0, -1, 0, 1]  max over subset outer = 27/10  max over K0 = 13/5  -> gap
+    e* = ('9/10', '3/10', '1/2', '3'), in subset outer (exact): True, w.e* = 27/10
+XXYY-c: w=[0, -1, 0, 1]  max over subset outer = 4  max over K0 = 39/10  -> gap
+    e* = ('7/5', '0', '0', '4'), in subset outer (exact): True, w.e* = 4
+XXYYY: w=[0, -1, 0, 0, 1]  max over subset outer = -4/5  max over K0 = -9/10  -> gap
+    e* = ('3', '17/10', '0', '0', '9/10'), in subset outer (exact): True, w.e* = -4/5
+XXXYY: w=[0, 1, -1, 0, 1]  max over subset outer = 81/10  max over K0 = 77/10  -> gap
+    e* = ('1', '5', '1/10', '3/10', '16/5'), in subset outer (exact): True, w.e* = 81/10
+
+
+two-type positive certificates
+$ python two_types_certificate.py 1/100
+zero powers replaced by 1/100
+XXYY-a: w=[-1, 0, 0, 1]  max over subset outer = -73/100  max over K0 = -17/20  -> gap
+    e* = ('37/20', '473/100', '18/25', '28/25'), in subset outer (exact): True, w.e* = -73/100
+XXYY-b: w=[0, -1, 0, 1]  max over subset outer = 271/100  max over K0 = 53/20  -> gap
+    e* = ('17/20', '29/100', '14/25', '3'), in subset outer (exact): True, w.e* = 271/100
+XXYY-c: w=[0, -1, 0, 1]  max over subset outer = 4  max over K0 = 79/20  -> gap
+    e* = ('34/25', '0', '1/100', '4'), in subset outer (exact): True, w.e* = 4
+XXYYY: w=[0, -1, 0, 0, 1]  max over subset outer = -73/100  max over K0 = -83/100  -> gap
+    e* = ('3', '41/25', '0', '3/100', '91/100'), in subset outer (exact): True, w.e* = -73/100
+XXXYY: w=[0, 1, -1, 0, 1]  max over subset outer = 817/100  max over K0 = 777/100  -> gap
+    e* = ('1', '5', '9/100', '31/100', '163/50'), in subset outer (exact): True, w.e* = 817/100
+
+
+coefficient-2 facets
+$ python n4_normal_certificate.py
+case 1 (zero powers -> 0): C=['0', '0', '3', '1/2'] D=['1', '3/2', '2', '0']
+   n = [-1, 0, 0, 2]: max over the {0,+-1} template hull = 29/20, max over K_0 = 7/5  -> normal outside {0,+-1}^4 certified
+   v = ('11/20', '99/20', '0', '1') lies in the template hull (exact): True
+   exact dimensions: 4 kernel, 3 supporting face; facet certified
+case 2 (zero powers -> 0): C=['0', '0', '3', '1/2'] D=['9/10', '1', '3', '0']
+   n = [-1, 0, 0, 2]: max over the {0,+-1} template hull = 8/5, max over K_0 = 13/10  -> normal outside {0,+-1}^4 certified
+   v = ('2/5', '18/5', '3/5', '1') lies in the template hull (exact): True
+   exact dimensions: 4 kernel, 3 supporting face; facet certified
+
+
+coefficient-2 positive facets
+$ python n4_normal_certificate.py 1/100
+case 1 (zero powers -> 1/100): C=['1/100', '1/100', '3', '1/2'] D=['1', '3/2', '2', '1/100']
+   n = [-1, 0, 0, 2]: max over the {0,+-1} template hull = 309/200, max over K_0 = 38/25  -> normal outside {0,+-1}^4 certified
+   v = ('91/200', '499/100', '3/200', '1') lies in the template hull (exact): True
+   exact dimensions: 4 kernel, 3 supporting face; facet certified
+case 2 (zero powers -> 1/100): C=['1/100', '1/100', '3', '1/2'] D=['9/10', '1', '3', '1/100']
+   n = [-1, 0, 0, 2]: max over the {0,+-1} template hull = 169/100, max over K_0 = 73/50  -> normal outside {0,+-1}^4 certified
+   v = ('31/100', '13/4', '1', '1') lies in the template hull (exact): True
+   exact dimensions: 4 kernel, 3 supporting face; facet certified
+
+
+affine gap certificate
+$ python affine_gap_certificate.py
+float: largest gap 0.05 in direction [-1, 0, 0, 1]
+eps = 0: h_K0(n) = 9/20 (exact maximiser x* = ('3/20', '5', '7/20', '3/5')), h_A(n) = 2/5  (both with rational primal-dual certificates)
+=> x* is in K_0 but admits no policy of the class: True
+
+
+affine positive gap certificate
+$ python affine_gap_certificate.py 1/100
+float: largest gap 0.045 in direction [-1, 0, 0, 1]
+eps = 1/100: h_K0(n) = 109/200 (exact maximiser x* = ('21/200', '5', '71/200', '13/20')), h_A(n) = 1/2  (both with rational primal-dual certificates)
+=> x* is in K_0 but admits no policy of the class: True

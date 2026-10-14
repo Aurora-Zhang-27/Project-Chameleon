@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-14",
+  "purpose": "Minimal causal deliverability research release",
+  "files": {
+    ".gitignore": {
+      "bytes": 77,
+      "sha256": "a13858567b77b69358fd2f11bf56ed4646ff77fcc9dfcbdf38efce775236cdf6"
+    },
+    "ARCHIVE.md": {
+      "bytes": 809,
+      "sha256": "f0b6a017faffeb11ff2cd50096c500b79606a5a343545990ef00d409b3d38dbb"
+    },
+    "CLAUDE.md": {
+      "bytes": 883,
+      "sha256": "75951f324eab89fbf0f8c95fe6ea600c5355fd7df738f94f8835ae61709950a3"
+    },
+    "README.md": {
+      "bytes": 4789,
+      "sha256": "0c23b9e32c8c405e7454dbe371f35c49577ea1823aeb734a3eef13c5f01c6106"
+    },
+    "RESEARCH_REPORT_ZH.md": {
+      "bytes": 11156,
+      "sha256": "ab02d7ae89a4cb7cee052a17f97944201b6b94ce8960effde4c9de5d5614fa54"
+    },
+    "chameleon_runtime.py": {
+      "bytes": 6622,
+      "sha256": "6f22d835260b0da31999fe38ef78039a68568142a83b0cdfc3cbc5c1e25a6af9"
+    },
+    "complexity_20260925/AFFINE_DECISION_ZH.md": {
+      "bytes": 13305,
+      "sha256": "941a52912cd42b81f72c1aef4136f743f93c7c56a9fb4fb4db32805f2e18dd63"
+    },
+    "complexity_20260925/HOMOGENEOUS_FLEET_ZH.md": {
+      "bytes": 25525,
+      "sha256": "b4b7cfd0bd6c270d566005a0020f6b9fbf15a41ca55c3efc48b1a746d0b46107"
+    },
+    "complexity_20260925/LITERATURE_CHECK_20260929_ZH.md": {
+      "bytes": 32725,
+      "sha256": "abc260d311a158b5db13c0d241e750a5b8b0f19c628cf0a19fffc12d498ce907"
+    },
+    "complexity_20260925/N3_METHOD_AND_N4_PLAN_ZH.md": {
+      "bytes": 24852,
+      "sha256": "e4e44d79cb145a26d5dd11195a334e0b53337beeee3b94814882c07fdbf3b0c4"
+    },
+    "complexity_20260925/N3_THEOREM_N4_COUNTEREXAMPLE_ZH.md": {
+      "bytes": 30891,
+      "sha256": "a703047584c839468ef11789d98181230087852acdb32b445a74d67a34f51d04"
+    },
+    "complexity_20260925/README.md": {
+      "bytes": 1534,
+      "sha256": "0703c4f8ef3faafd362c89bf1a84f643e836c636a21e79736a4e0e849b2c851e"
+    },
+    "complexity_20260925/REVIEW_N3_N4_20260928_CODEX_ZH.md": {
+      "bytes": 35482,
+      "sha256": "6f9e75687b066b6e3858739d8d9a2b767931fad0c1a6661295eca5322103cf57"
+    },
+    "complexity_20260925/REVIEW_THEOREM_H_20261007_CODEX_ZH.md": {
+      "bytes": 31428,
+      "sha256": "d55382453e2b4e78af1ed3c5f0f9d5920319ad10776f1b84931a8cd3ba8bd829"
+    },
+    "complexity_20260925/SANDWICH_EXPERIMENT_ZH.md": {
+      "bytes": 7082,
+      "sha256": "31c7a9b8ebb35d481ce0d5ae32509a3bdc132f4c2e04c72a286076ce8a8f39ff"
+    },
+    "complexity_20260925/SEED_N2_THEOREM_ZH.md": {
+      "bytes": 6615,
+      "sha256": "4744f34b353943e1dc4b973068ba431ca33263b77bb7ab9eca9301ce2d73e7c9"
+    },
+    "complexity_20260925/evidence/affine_decision.py": {
+      "bytes": 16538,
+      "sha256": "bc294d184f23981225668ff9fad9fc3e1a7f49b014f4f0d171b788aa31c2434b"
+    },
+    "complexity_20260925/evidence/affine_gap_certificate.py": {
+      "bytes": 4796,
+      "sha256": "fbe71b087231b2b408fac4a6f38930dd5ccfef235d81c6f594a6401954afb54e"
+    },
+    "complexity_20260925/evidence/affine_sandwich.py": {
+      "bytes": 3094,
+      "sha256": "1481d68a848efa1380903552aca405f4aef248b2d3cb2de98109bc818affeb9d"
+    },
+    "complexity_20260925/evidence/affine_summary.py": {
+      "bytes": 2104,
+      "sha256": "c74d91c0c1e63228eb007b10fd23669819ea115451c837f88b80c6d80fe6fb7e"
+    },
+    "complexity_20260925/evidence/balance_policy_check.py": {
+      "bytes": 3589,
+      "sha256": "306ad419a5e67d46e2e322e675afcf94dc7ad3013ede2d9756df2dae00bbdc68"
+    },
+    "complexity_20260925/evidence/homogeneous_exact.py": {
+      "bytes": 7354,
+      "sha256": "eb445b87cc3fa872ff21852acf930e7cc9e438946e3901a02d3d345782add090"
+    },
+    "complexity_20260925/evidence/n2_exact.py": {
+      "bytes": 5175,
+      "sha256": "136398cd78038a2468ab5d0288e175105c7955637af67b17c587c1ad5074c38c"
+    },
+    "complexity_20260925/evidence/n3_exact.py": {
+      "bytes": 8534,
+      "sha256": "9bca5e78ee969da023c2be140730ee55ac1462c45c41204e97d1582817ae0397"
+    },
+    "complexity_20260925/evidence/n3_lemma_certificate.py": {
+      "bytes": 7380,
+      "sha256": "4c32699b8ffb28c126d5e82671837652350e07d4d82bd55994ba2afa044c1edc"
+    },
+    "complexity_20260925/evidence/n4_normal_certificate.py": {
+      "bytes": 4012,
+      "sha256": "72e032729f76c073b456c822c023ae8e8034b7a58cf68fcdde2da282faee99db"
+    },
+    "complexity_20260925/evidence/n4_real_certificate.py": {
+      "bytes": 6732,
+      "sha256": "782ad99018a878715e1a2c481b38122d0521e691668be1d2b2aa721ace87c0c0"
+    },
+    "complexity_20260925/evidence/oracle2.py": {
+      "bytes": 8372,
+      "sha256": "4f3884f08930df55d8d3a12d09788f7ad04ae787ef766014c663fad300080da2"
+    },
+    "complexity_20260925/evidence/review_codex_h_independent.py": {
+      "bytes": 15764,
+      "sha256": "3f38b9c4f810f1a4c64352fdcf0c7fd95b4e16db5926c087383949e595ece6d8"
+    },
+    "complexity_20260925/evidence/review_codex_independent.py": {
+      "bytes": 13119,
+      "sha256": "fe6eec3208e47dc08f8520fa27ecf9970b71b757058b270c16a6d53360e0e081"
+    },
+    "complexity_20260925/evidence/review_codex_n4_geometry.py": {
+      "bytes": 3182,
+      "sha256": "4d4b9be2af0cae0e5a04f945d09bfd830c758ea474676f28e56cb065b803cd57"
+    },
+    "complexity_20260925/evidence/sandwich_experiment.py": {
+      "bytes": 5149,
+      "sha256": "8c9b75c80193c21fc9cd9c44aff36c77158d718fbfd2903e180dfb06f399a345"
+    },
+    "complexity_20260925/evidence/sandwich_summary.py": {
+      "bytes": 2361,
+      "sha256": "85ee3f6041d3ab17d1fda231dae9e0205e2600cc9dd04e40571c87edbe5f3008"
+    },
+    "complexity_20260925/evidence/two_types_certificate.py": {
+      "bytes": 3764,
+      "sha256": "83cf871e30f8d896750f7e2570fa7da94c7a066cb48faba5e51a784f82d4bba7"
+    },
+    "complexity_20260925/no_universal_policy.py": {
+      "bytes": 2634,
+      "sha256": "347253dbde1cf888f4f083fb955761ca31750c56bedb3cf7aebcc8803803100f"
+    },
+    "examples/affine.json": {
+      "bytes": 277,
+      "sha256": "c82b4e381b474d9d4601bd5f6cf12b1fdb504ca86ae846f689c494833557f793"
+    },
+    "examples/affine_gap.json": {
+      "bytes": 377,
+      "sha256": "d7babcaa7181f4830861883c50893b27bdf47994f195af60e040bde0fdab285e"
+    },
+    "examples/full_reach.json": {
+      "bytes": 287,
+      "sha256": "e2f0ed87e8ca4c059bbdccec33bae3f05e0823f375fc8f04dc1a641f81fa8fd8"
+    },
+    "examples/homogeneous.json": {
+      "bytes": 312,
+      "sha256": "3e476040fc6f4b91f4952b4dff0f1ba869add344fa94881241bd6677cc7c2cb3"
+    },
+    "examples/n2.json": {
+      "bytes": 200,
+      "sha256": "b0733cdd45dd33d1c7a286d5f95c89c5486eab56e3132cc039d833f5149a6eb6"
+    },
+    "examples/n3.json": {
+      "bytes": 228,
+      "sha256": "53fcb8bbfc85b364f9ac99098bdb43b376c4057c17e5c6898cfa9b47179d9bd2"
+    },
+    "examples/single.json": {
+      "bytes": 141,
+      "sha256": "d06475fbebe12f14583342250a97d735d627aceca4925894b43589c2c721bf41"
+    },
+    "requirements-reproduce.txt": {
+      "bytes": 74,
+      "sha256": "edc85402dbd2e3b3d40c8c7e3fba7b75df67b2b882f72cd7eeab655c590f22ce"
+    },
+    "requirements.txt": {
+      "bytes": 30,
+      "sha256": "75bddf7b431cc4f845a4ad9b74876ce37c8f516a023b3074f7324cc63f402d74"
+    },
+    "results/README.md": {
+      "bytes": 811,
+      "sha256": "3f1a2fd909cfdb95ce6736115f1e81bf7a0424348108c867f58d6f685e1e3809"
+    },
+    "results/affine_samples.csv": {
+      "bytes": 645,
+      "sha256": "cb7bd0597491efe6fe20c3cf197f6307172e2f9ac46b9082ce096072c6c155a4"
+    },
+    "results/affine_scaling.csv": {
+      "bytes": 2088,
+      "sha256": "9a7e5330394777a2130d3a72271ad5aa7133a435941461f6c5d87f2e68edcdb4"
+    },
+    "results/certificates.txt": {
+      "bytes": 16821,
+      "sha256": "da02856b0678e3442a2f84f576ab10f3dfbd494cd9e207532c21e41fa94cca6c"
+    },
+    "results/provenance.json": {
+      "bytes": 4293,
+      "sha256": "65619d1f3ee48ca1b08332ef1c3840b29bf3b64c32be65efec86730e85a6ffa1"
+    },
+    "results/release_checks.json": {
+      "bytes": 3630,
+      "sha256": "22c3ef3fb9333a4921e83cac680d75ec9eb782dff8039605ac2be5683c978d87"
+    },
+    "results/vertex_summary.json": {
+      "bytes": 1346,
+      "sha256": "da5b32eb6317bb89ce111ba9832725807190a34a9c04c7848abdcae806464133"
+    },
+    "run.py": {
+      "bytes": 1529,
+      "sha256": "c4cbc51eca7916147b740ac93a8e110a0c6465dcd591fa7f5938613e62725e8c"
+    },
+    "tests/test_release.py": {
+      "bytes": 3372,
+      "sha256": "37abc315640aabc42caf49bad42d61ebff2ea10a71464880c1aa1cfac046389a"
+    },
+    "verify_release.py": {
+      "bytes": 3216,
+      "sha256": "7ca41f938146fad7f7bede498d298fda90af2d300e7413c84332d6d389455362"
+    }
+  }
+}
