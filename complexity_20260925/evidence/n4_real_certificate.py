@@ -8,8 +8,8 @@ eps = 0 (default) or eps = 1/100 (all powers strictly positive).
     Q = {ah <= e(S) <= bh} lies inside the subset outer approximation of K_0.
 (b) An exact vertex e* of Q maximizing e1 - e2 + e4.
 (c) Elementary valid inequalities for K_0 (derived by hand in the document) that e* violates.
-Endpoint-tree sufficiency: SEED_N2_THEOREM_ZH.md §4 convexity argument (also Xie & Chen Prop 2).
-With --three-types (added 2026-10-07, HOMOGENEOUS_FLEET_ZH.md §4) the instance is Example C: devices 1 and 2
+Endpoint-tree sufficiency: SEED_N2_THEOREM.md §4 convexity argument (also Xie & Chen Prop 2).
+With --three-types (added 2026-10-07, HOMOGENEOUS_FLEET.md §4) the instance is Example C: devices 1 and 2
 are identical, so the fleet has only three device types: E=(4,4,1,1), C=(0,0,3,1/2), D=(1,1,2,0),
 requests [1/5, 3/5] then [-1, 8/5]; the valid inequality is e4 - e2 <= 2/5.
 Usage: python3 n4_real_certificate.py [eps] [--three-types]   e.g.  python3 n4_real_certificate.py 1/100"""

@@ -58,7 +58,7 @@ def member(M, e, presolve=True):
     """True iff HiGHS reports the tree LP with root fixed at e as feasible.
     presolve=False is the cross-check for a reported infeasibility: on one case (E=(4,3,4), C=(2,1.5,0),
     D=(2,0,2), menus [(-.5,2),(1,2),(1,1.5)], root (4,2.5,1.5)) default HiGHS returned a false
-    'infeasible' although an exact rational policy exists (REVIEW_N3_N4_20260928_CODEX_ZH.md §7.6)."""
+    'infeasible' although an exact rational policy exists (REVIEW_N3_N4_20260928_CODEX.md §7.6)."""
     N = M['N']; b = list(M['bnd'])
     for i in range(N): b[-N+i] = (e[i], e[i])
     return linprog(np.zeros(M['nv']), A_ub=M['Aub'], b_ub=M['bub'], A_eq=M['Aeq'], b_eq=M['beq'], bounds=b,

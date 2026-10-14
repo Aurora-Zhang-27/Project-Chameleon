@@ -1,19 +1,17 @@
-# 当前研究资料与证书
+# Research documents and certificates
 
-模型、安装、最小入口和状态语义见根 [README](../README.md)。
+See the root [README](../README.md) for the model, installation, minimal entry point and status semantics.
 
-| 资料 | 用途 |
+| Document | Purpose |
 |---|---|
-| [N3_THEOREM_N4_COUNTEREXAMPLE_ZH.md](N3_THEOREM_N4_COUNTEREXAMPLE_ZH.md) | N≤3 精确递推的证明及 N=4 反例 |
-| [SEED_N2_THEOREM_ZH.md](SEED_N2_THEOREM_ZH.md) | 二维引理、退化情形和因果选择器 |
-| [HOMOGENEOUS_FLEET_ZH.md](HOMOGENEOUS_FLEET_ZH.md) | 同类任意台数、成比例分组、类型反例 |
-| [N3_METHOD_AND_N4_PLAN_ZH.md](N3_METHOD_AND_N4_PLAN_ZH.md) | 方法说明、系数 2 的反例及总电量情形证明 |
-| [AFFINE_DECISION_ZH.md](AFFINE_DECISION_ZH.md) | 仿射实验及精确失败证书；已校正严格认证口径 |
-| [SANDWICH_EXPERIMENT_ZH.md](SANDWICH_EXPERIMENT_ZH.md) | 历史夹逼实验设计与局限 |
-| [LITERATURE_CHECK_20260929_ZH.md](LITERATURE_CHECK_20260929_ZH.md) | 文献核对范围、已知工具和未确认优先权 |
-| [REVIEW_N3_N4_20260928_CODEX_ZH.md](REVIEW_N3_N4_20260928_CODEX_ZH.md) | N3/N4 独立复核记录 |
-| [REVIEW_THEOREM_H_20261007_CODEX_ZH.md](REVIEW_THEOREM_H_20261007_CODEX_ZH.md) | 定理 H 独立复核记录 |
+| [N3 theorem and N4 counterexample](N3_THEOREM_N4_COUNTEREXAMPLE.md) | Proof of the N≤3 exact recursion and the N=4 counterexample |
+| [N2 theorem](SEED_N2_THEOREM.md) | Two-dimensional lemma, degeneracies and causal selector |
+| [Homogeneous fleets](HOMOGENEOUS_FLEET.md) | Arbitrary homogeneous fleets, proportional groups and type counterexamples |
+| [Method and N4 plan](N3_METHOD_AND_N4_PLAN.md) | Method explanation, coefficient-2 counterexamples and total-energy proof |
+| [Affine membership](AFFINE_DECISION.md) | Affine experiments and exact failure certificate, using strict certification counts |
+| [Sandwich experiment](SANDWICH_EXPERIMENT.md) | Historical experiment design and limitations |
+| [Literature check](LITERATURE_CHECK_20260929.md) | Checked sources, known tools and unconfirmed priority |
+| [N3/N4 independent review](REVIEW_N3_N4_20260928_CODEX.md) | Historical independent audit and evidence |
+| [Theorem H independent review](REVIEW_THEOREM_H_20261007_CODEX.md) | Historical homogeneous-fleet audit and evidence |
 
-`evidence/` 只保留运行算法、证书所需公共库和两类样本复现脚本。搜索器、全过程网页及大批原始记录留在完整本机目录。历史复核文档中的未随包发布文件名是原研究目录引用，不是本包的运行依赖。
-
-证书一键复现：根目录运行 `python verify_release.py`。汇总结果见 [results](../results/README.md)。
+Runnable implementations and rational certificates are in `evidence/`. The root `verify_release.py` runs the retained verification subset. Some historical searches referenced in these documents are not included in this minimal package; their aggregate results are labelled accordingly. The review reports describe the revisions they originally audited, and their findings must be distinguished from subsequent fixes.

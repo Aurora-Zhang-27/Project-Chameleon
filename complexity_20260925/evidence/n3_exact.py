@@ -1,4 +1,4 @@
-"""Three-device exact rational recursion (N=3 theorem, N3_THEOREM_N4_COUNTEREXAMPLE_ZH.md, 2026-09-28).
+"""Three-device exact rational recursion (N=3 theorem, N3_THEOREM_N4_COUNTEREXAMPLE.md, 2026-09-28).
 
 step() is the theorem's algorithm: add the single-request bounds (l end for upper, u end for lower),
 fold in the physical box by convolution, test nonemptiness by a <= b (Frank sandwich), and tighten

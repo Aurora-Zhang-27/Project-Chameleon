@@ -1,5 +1,5 @@
 """Exact recursion for a HOMOGENEOUS fleet (m identical lossless devices, any m, any initial SoCs),
-HOMOGENEOUS_FLEET_ZH.md Theorem H.  K_t is described by 2m numbers: b_k bounds the sum of the k largest
+HOMOGENEOUS_FLEET.md Theorem H.  K_t is described by 2m numbers: b_k bounds the sum of the k largest
 SoCs from above, a_k bounds the sum of the k smallest from below (k = 0..m, a_0 = b_0 = 0).
 One step (only +, -, min, max; exact Fractions; O(m) arithmetic operations):
   b~_k = b_k + min(D k, l + C (m-k)),          a~_k = a_k + max(-C k, u - D (m-k))

@@ -1,10 +1,11 @@
-# Project Chameleon 精简发布版
+# Project Chameleon — publication maintenance
 
-讨论用中文。先读 README.md 和 RESEARCH_REPORT_ZH.md。
+All published material must be in English. Read README.md and RESEARCH_REPORT.md first. Private discussion may follow the user's preferred language.
 
-模型为无损、允许交叉充电、无模式互斥的多设备因果区间兑现。保持证明、精确有理数证书、浮点证据和开放问题之间的区别。
+The model is lossless causal interval deliverability for multiple devices, allowing cross-charging and without mode exclusivity. Distinguish proofs, exact rational certificates, floating-point evidence and open questions.
 
-已证明的精确情形：N≤3；单一类型任意台数；C_i≥E_i 且 D_i≥E_i；至多 3 个成比例且同比例电量的组。
-一般异构情形的子集或 {0,±1} 模板并不精确。仿射策略 certified 才安全接受；float_only/rejected 均不能由内近似推出不可行。
+Proven exact regimes: N≤3; one device type with arbitrary fleet size; C_i≥E_i and D_i≥E_i; at most three proportional groups with equal energy fractions within each group.
 
-研究已阶段性收束；本仓库只维护必要运行代码、资料与结果，不继续开放问题搜索。代码改动需运行 `python -m unittest discover -s tests -v` 与 `python verify_release.py`。不要下载或提交论文全文与个人材料。旧研究的 Git 历史入口见 ARCHIVE.md。
+Subset and {0,±1} templates are not exact for general heterogeneous fleets. Only certified affine policies justify safe acceptance. Neither float_only nor rejected inner tests prove infeasibility.
+
+Research is closed at the recorded scope. Maintain necessary runnable code, documentation and results without extending open-problem searches. For code changes run `python -m unittest discover -s tests -v` and `python verify_release.py`. Do not download or commit full papers or personal materials. Earlier Git history is indexed in ARCHIVE.md.

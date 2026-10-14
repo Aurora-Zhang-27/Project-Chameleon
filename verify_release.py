@@ -41,14 +41,27 @@ def main():
             target=target.strip('<>').split('#')[0]
             if not target or '://' in target or target.startswith('mailto:'):continue
             if not (path.parent/target).exists():broken.append(dict(file=str(path.relative_to(ROOT)),target=target))
+    english_violations=[]
+    ignored={'.git','.venv','__pycache__'}
+    han=re.compile(r'[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]')
+    for path in ROOT.rglob('*'):
+        rel=path.relative_to(ROOT)
+        if not path.is_file() or any(part in ignored for part in rel.parts):continue
+        if han.search(str(rel)) or '_ZH.md' in str(rel):
+            english_violations.append(dict(file=str(rel),reason='non-English document name'))
+        try:content=path.read_text(encoding='utf-8')
+        except UnicodeError:continue
+        if han.search(content):
+            english_violations.append(dict(file=str(rel),reason='Han characters in published text'))
     summary=dict(date='2026-10-14',python=platform.python_version(),numpy=numpy.__version__,scipy=scipy.__version__,
-                 checks=records,broken_markdown_links=broken,
+                 checks=records,broken_markdown_links=broken,english_violations=english_violations,
                  historical_211063_samples_rerun=False,
                  note='Rational certificate scripts validate exact identities. Other LP comparisons remain floating-point evidence.',
-                 passed=len(records)==len(COMMANDS) and all(r['exit_code']==0 for r in records) and not broken)
+                 passed=len(records)==len(COMMANDS) and all(r['exit_code']==0 for r in records) and not broken and not english_violations)
     (ROOT/'results/certificates.txt').write_text('\n\n'.join(logs))
     (ROOT/'results/release_checks.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
     print('markdown links:',broken or 'PASS')
+    print('English publication:',english_violations or 'PASS')
     if not summary['passed']:raise SystemExit(1)
 
 if __name__=='__main__':main()

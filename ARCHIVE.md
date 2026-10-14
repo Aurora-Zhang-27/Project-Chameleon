@@ -1,9 +1,11 @@
-# 旧版与发布范围
+# Archive and publication scope
 
-2026-10-13，公开默认分支改为当前因果可兑现性研究的最小运行包。
+On 2026-10-13, the public default branch was updated to the minimal package for the current causal-deliverability research.
 
-旧 MFE 版本的源代码、冻结数据和结果没有被改写，可在原提交 [6532bcd](https://github.com/Aurora-Zhang-27/Project-Chameleon/tree/6532bcdfb11583b3e57ac45f000a6eb5a1490afa) 或 `archive/pre-causal-release-20261013` 标签查看。
+Earlier MFE source code, frozen data and results remain unchanged in [commit 6532bcd](https://github.com/Aurora-Zhang-27/Project-Chameleon/tree/6532bcdfb11583b3e57ac45f000a6eb5a1490afa) and the `archive/pre-causal-release-20261013` tag.
 
-本机完整目录与研究分支保留；精简发布从本机提交 `8f50a79e80b5c2b1658b9b71cb1d42f516cb08e7` 选择必要文件。没有把个人 CV、申请材料、课程项目、下载论文 PDF、完整搜索轨迹和历史网页纳入新发布。
+The complete local directory and research branch are retained. This publication selects necessary files from local source commit `8f50a79e80b5c2b1658b9b71cb1d42f516cb08e7`. It excludes personal CVs, application materials, coursework, downloaded paper PDFs, full search traces and historical webpages.
 
-本次运行包修复发生在独立发布工作区，不改本机完整研究源文件。对报告作了认证状态与严格待定口径的必要更正，没有扩展研究问题。
+Runtime fixes were made in a separate publication worktree, leaving the complete research sources unchanged. Reports received necessary corrections to certification status and strict unresolved counts; the research scope was not extended.
+
+The current publication uses English throughout, including document names, instructions, research notes, review reports and result labels. Historical commits are preserved rather than rewritten.

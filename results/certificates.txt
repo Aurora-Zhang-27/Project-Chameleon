@@ -12,7 +12,7 @@ test_outside_commitment_not_executed (test_release.ReleaseTests) ... ok
 test_template_rejects_known_outer_gap (test_release.ReleaseTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 1.135s
+Ran 10 tests in 1.122s
 
 OK
 
