@@ -9,119 +9,119 @@
       "command": "python -m unittest discover -s tests -v",
       "cwd": ".",
       "exit_code": 0,
-      "seconds": 1.491
+      "seconds": 1.475
     },
     {
       "check": "CLI demo",
       "command": "python run.py --demo",
       "cwd": ".",
       "exit_code": 0,
-      "seconds": 0.345
+      "seconds": 0.36
     },
     {
       "check": "CLI policy execution",
       "command": "python run.py --input examples/affine.json --requests 0 1/10",
       "cwd": ".",
       "exit_code": 0,
-      "seconds": 0.364
+      "seconds": 0.357
     },
     {
       "check": "N2 recursion",
       "command": "python n2_exact.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.479
+      "seconds": 0.499
     },
     {
       "check": "N3 recursion",
       "command": "python n3_exact.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 1.409
+      "seconds": 1.384
     },
     {
       "check": "N3 lemma certificates",
       "command": "python n3_lemma_certificate.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.546
+      "seconds": 0.577
     },
     {
       "check": "homogeneous recursion",
       "command": "python homogeneous_exact.py 3 100",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.769
+      "seconds": 0.759
     },
     {
       "check": "independent homogeneous attack",
       "command": "python review_codex_h_independent.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 9.019
+      "seconds": 9.11
     },
     {
       "check": "Example B facet certificate",
       "command": "python review_codex_n4_geometry.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.611
+      "seconds": 0.617
     },
     {
       "check": "Example C certificate",
       "command": "python n4_real_certificate.py --three-types",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.403
+      "seconds": 0.453
     },
     {
       "check": "Example C positive certificate",
       "command": "python n4_real_certificate.py 1/100 --three-types",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.452
+      "seconds": 0.507
     },
     {
       "check": "two-type certificates",
       "command": "python two_types_certificate.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.994
+      "seconds": 0.976
     },
     {
       "check": "two-type positive certificates",
       "command": "python two_types_certificate.py 1/100",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.982
+      "seconds": 0.995
     },
     {
       "check": "coefficient-2 facets",
       "command": "python n4_normal_certificate.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 1.714
+      "seconds": 1.736
     },
     {
       "check": "coefficient-2 positive facets",
       "command": "python n4_normal_certificate.py 1/100",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 1.512
+      "seconds": 1.554
     },
     {
       "check": "affine gap certificate",
       "command": "python affine_gap_certificate.py",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 0.835
+      "seconds": 0.822
     },
     {
       "check": "affine positive gap certificate",
       "command": "python affine_gap_certificate.py 1/100",
-      "cwd": "complexity_20260925/evidence",
+      "cwd": "evidence",
       "exit_code": 0,
-      "seconds": 1.15
+      "seconds": 1.106
     }
   ],
   "broken_markdown_links": [],

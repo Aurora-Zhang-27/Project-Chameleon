@@ -4,7 +4,7 @@ import subprocess,sys,json,time,platform,hashlib,re
 import numpy,scipy
 
 ROOT=Path(__file__).resolve().parent
-CODE=ROOT/'complexity_20260925/evidence'
+CODE=ROOT/'evidence'
 COMMANDS=[
  ('runtime regressions',['-m','unittest','discover','-s','tests','-v'],ROOT),
  ('CLI demo',['run.py','--demo'],ROOT),

@@ -2,7 +2,7 @@
 from pathlib import Path
 from fractions import Fraction as F
 import sys
-sys.path.insert(0,str(Path(__file__).parent/'complexity_20260925/evidence'))
+sys.path.insert(0,str(Path(__file__).parent/'evidence'))
 import n2_exact, n3_exact, homogeneous_exact
 from affine_decision import AffinePolicyLP, rational
 

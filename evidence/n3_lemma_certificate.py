@@ -1,4 +1,4 @@
-"""Exact certificate for the N=3 tightening lemma (Lemma 3 of N3_THEOREM_N4_COUNTEREXAMPLE.md).
+"""Exact certificate for the N=3 tightening lemma (submodular/supermodular subset descriptions).
 
 Setting: V={1,2,3}; b submodular, a supermodular on 2^V, a(∅)=b(∅)=0, a<=b pointwise.  These
 linear inequalities define the cone CONE in the 14 coordinates (a(T), b(T)), T nonempty.

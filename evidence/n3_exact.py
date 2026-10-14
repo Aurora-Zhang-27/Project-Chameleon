@@ -1,4 +1,4 @@
-"""Three-device exact rational recursion (N=3 theorem, N3_THEOREM_N4_COUNTEREXAMPLE.md, 2026-09-28).
+"""Three-device exact rational recursion (N=3, closed-form subset bounds).
 
 step() is the theorem's algorithm: add the single-request bounds (l end for upper, u end for lower),
 fold in the physical box by convolution, test nonemptiness by a <= b (Frank sandwich), and tighten
@@ -10,7 +10,7 @@ With CROSSCHECK on, every step is also tightened by exact vertex enumeration of 
 inequalities (independent of Lemma 3) and the two results must agree; the H3'' property of the
 output is asserted as well.  These asserts are checks, not the source of correctness.
 LP (floating point) is used only by validate().
-Run: python3 complexity_20260925/evidence/n3_exact.py
+Run: python3 evidence/n3_exact.py
 """
 from fractions import Fraction as F
 from functools import lru_cache
