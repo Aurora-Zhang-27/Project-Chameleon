@@ -7,3 +7,5 @@
 - `certificates.txt`、`release_checks.json`：本次发布工作区运行的精确证书、回归及入口检查记录。
 
 历史计时依赖机器和软件版本；实验高接受率不是一般精确性证明。精确反例以证书脚本为准。
+
+`affine_scaling.csv` 的 tree_feasible_float 空值表示未运行树 LP，不是没有可兑现初态。
